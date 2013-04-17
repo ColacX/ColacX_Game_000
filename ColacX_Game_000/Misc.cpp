@@ -2,8 +2,6 @@
 
 #include <math.h>
 
-using namespace ColacX;
-
 Misc::Misc()
 {
 }

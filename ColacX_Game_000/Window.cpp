@@ -2,8 +2,6 @@
 //notes focusera på genetiska algorithmen istället för magnetism och kraft förändringar
 
 #include "Window.h"
-using namespace ColacX;
-
 #include <Windows.h>
 #include <list>
 
@@ -113,6 +111,8 @@ void Window::Maximised( bool state )
 
 void Window::UpdateWindow()
 {
+	Window::addListener(this);
+
 	LPCSTR windowClassName;
 	windowClassName = "windowClassName";
 
@@ -247,6 +247,8 @@ void Window::UpdateWindow()
 	if( !wglMakeCurrent( windowDeviceContext, renderingContext ) ){
 		throw "GameClient: wglMakeCurrent failed";
 	}
+
+	
 }
 
 void Window::CheckMessages()

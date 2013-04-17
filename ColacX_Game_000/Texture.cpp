@@ -1,7 +1,13 @@
 #include "Texture.h"
 
-Texture::Texture(const char* textureFilepath){
+void Texture::G_Construct(const char* textureFilepath)
+{
 	loadTGA( textureFilepath );
+}
+
+void Texture::G_Destruct()
+{
+    glDeleteTextures(1, &this->textureID);
 }
 
 void Texture::loadTGA(const char* textureFilepath){
@@ -21,12 +27,13 @@ void Texture::loadTGA(const char* textureFilepath){
     glTexImage2D( GL_TEXTURE_2D, 0, tgaImage.m_texFormat, tgaImage.m_nImageWidth, tgaImage.m_nImageHeight, 0, tgaImage.m_texFormat, GL_UNSIGNED_BYTE, tgaImage.m_nImageData );
 }
 
-Texture::~Texture(){
-    glDeleteTextures(1,&this->textureID);
+void Texture::G_Bind(){
+    glBindTexture(GL_TEXTURE_2D, this->textureID);
 }
 
-void Texture::bind(){
-    glBindTexture(GL_TEXTURE_2D, this->textureID);
+unsigned int Texture::C_GetTextureID()
+{
+	return this->textureID;
 }
 
 tgaImageFile::~tgaImageFile( void )

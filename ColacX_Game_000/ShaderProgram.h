@@ -3,8 +3,8 @@
 #include <fstream>
 
 #include <Windows.h>
-#include "../../external/include/gl/glew.h"
-#include "../../external/include/gl/gl.h"
+#include "..\external\include\gl\glew.h"
+#include "../external/include/gl/gl.h"
 
 class Shader{
 

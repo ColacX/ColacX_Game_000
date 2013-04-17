@@ -18,7 +18,7 @@
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
-			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			OutputDirectory="working_directory\$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="1"
 			UseOfMFC="2"
@@ -90,7 +90,7 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			OutputDirectory="working_directory$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="1"
 			UseOfMFC="2"
@@ -176,10 +176,6 @@
 				>
 			</File>
 			<File
-				RelativePath=".\Program000.h"
-				>
-			</File>
-			<File
 				RelativePath=".\Program001.h"
 				>
 			</File>
@@ -204,14 +200,6 @@
 				>
 			</File>
 			<File
-				RelativePath=".\Camera.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\Camera.h"
-				>
-			</File>
-			<File
 				RelativePath=".\Entity.cpp"
 				>
 			</File>
@@ -220,11 +208,23 @@
 				>
 			</File>
 			<File
+				RelativePath=".\File.h"
+				>
+			</File>
+			<File
 				RelativePath=".\Misc.cpp"
 				>
 			</File>
 			<File
 				RelativePath=".\Misc.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Random.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Random.h"
 				>
 			</File>
 			<File
@@ -251,14 +251,6 @@
 				RelativePath=".\TriangleCompiler.h"
 				>
 			</File>
-			<Filter
-				Name="Clouds"
-				>
-				<File
-					RelativePath=".\Cloud000.h"
-					>
-				</File>
-			</Filter>
 			<Filter
 				Name="System"
 				>
@@ -288,10 +280,110 @@
 				</File>
 			</Filter>
 			<Filter
-				Name="Water"
+				Name="Camera"
 				>
 				<File
-					RelativePath=".\Water000.h"
+					RelativePath=".\Camera.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Camera.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Camera000.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Manager"
+				>
+				<File
+					RelativePath=".\Manager000.hpp"
+					>
+				</File>
+			</Filter>
+		</Filter>
+		<Filter
+			Name="Temp"
+			>
+			<File
+				RelativePath=".\working_directory\data\shaders\shaders_readme.txt"
+				>
+			</File>
+			<File
+				RelativePath=".\working_directory\data\shaders\simple_multitexture.frag"
+				>
+			</File>
+			<File
+				RelativePath=".\working_directory\data\shaders\simple_multitexture.vert"
+				>
+			</File>
+			<File
+				RelativePath=".\working_directory\data\shaders\test.frag"
+				>
+			</File>
+			<File
+				RelativePath=".\working_directory\data\shaders\test.geom"
+				>
+			</File>
+			<File
+				RelativePath=".\working_directory\data\shaders\test.vert"
+				>
+			</File>
+			<File
+				RelativePath=".\working_directory\data\shaders\trivial_110.frag"
+				>
+			</File>
+			<File
+				RelativePath=".\working_directory\data\shaders\trivial_110.vert"
+				>
+			</File>
+			<File
+				RelativePath=".\working_directory\data\shaders\trivial_330.frag"
+				>
+			</File>
+			<File
+				RelativePath=".\working_directory\data\shaders\trivial_330.geom"
+				>
+			</File>
+			<File
+				RelativePath=".\working_directory\data\shaders\trivial_330.vert"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Trivial Examples"
+			>
+			<Filter
+				Name="Clouds"
+				>
+				<File
+					RelativePath=".\Cloud000.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Cloud001.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Gun"
+				>
+				<File
+					RelativePath=".\Gun000.hpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Sky"
+				>
+				<File
+					RelativePath=".\Sky000.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Sky001.h"
 					>
 				</File>
 			</Filter>
@@ -299,7 +391,55 @@
 				Name="Terrain"
 				>
 				<File
+					RelativePath=".\working_directory\data\shaders\Terrain000.frag"
+					>
+				</File>
+				<File
 					RelativePath=".\Terrain000.h"
+					>
+				</File>
+				<File
+					RelativePath=".\working_directory\data\shaders\Terrain000.vert"
+					>
+				</File>
+				<File
+					RelativePath=".\Terrain001.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Terrain002.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Water"
+				>
+				<File
+					RelativePath=".\working_directory\data\shaders\Water000.frag"
+					>
+				</File>
+				<File
+					RelativePath=".\Water000.h"
+					>
+				</File>
+				<File
+					RelativePath=".\working_directory\data\shaders\Water000.vert"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Tesselation"
+				>
+				<File
+					RelativePath=".\TessellationTeapot.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Explosion"
+				>
+				<File
+					RelativePath=".\Explosion000.hpp"
 					>
 				</File>
 			</Filter>

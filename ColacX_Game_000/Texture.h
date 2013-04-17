@@ -48,7 +48,10 @@ class Texture{
         void loadTGA(const char* textureFilepath);
     
 	public:
-        Texture(const char* textureFilepath); //must be called by the thread that owns the rendering context or it will be ignored
-        ~Texture(); //must be called by the thread that owns the rendering context or it will be ignored
-        void bind();
+		//void Construct();
+		//void C_Descruct();
+		void G_Construct(const char* textureFilepath);
+		void G_Destruct();
+		void G_Bind();
+		unsigned int C_GetTextureID();
 };

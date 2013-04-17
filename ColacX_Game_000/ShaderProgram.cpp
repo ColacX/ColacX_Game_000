@@ -77,6 +77,13 @@ void ShaderProgram::link()const{
 		printf("Info log: %s\n", infoLog);
 		throw "ShaderProgram: error glLinkProgram";
 	}
+
+	glProgramParameteriEXT(shaderprogramID,GL_GEOMETRY_INPUT_TYPE_EXT,GL_TRIANGLES);
+	glProgramParameteriEXT(shaderprogramID,GL_GEOMETRY_OUTPUT_TYPE_EXT,GL_TRIANGLES);
+
+	int temp;
+	glGetIntegerv(GL_MAX_GEOMETRY_OUTPUT_VERTICES_EXT,&temp);
+	glProgramParameteriEXT(shaderprogramID,GL_GEOMETRY_VERTICES_OUT_EXT,temp);
 }
 
 void ShaderProgram::activate()const{

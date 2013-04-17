@@ -1,0 +1,2 @@
+//plasma bullet explosion effect
+//should be written as a shader, then i can apply it to any object// hmm how do i do multiple explosions then? //or just do like other games and make one huge explosion
